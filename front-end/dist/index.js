@@ -48,15 +48,15 @@ function calculateCalories() {
         resultElement.innerHTML = `Your Total Daily Energy Expenditure (TDEE) is approximately ${tdee.toFixed(2)} calories.`;
     }
 }
-let email = document.querySelector("#email-input");
-let password = document.querySelector("#password-input");
+let email = document.querySelector("#username");
+let password = document.querySelector("#password");
 async function signup() {
 
     email = email.value;
     password = password.value;
 
     try {
-        const response = await fetch('http://localhost:4444/auth/register', {
+        const response = await fetch('http://localhost:4444/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -70,4 +70,37 @@ async function signup() {
         console.error('Error during signup:', error);
     }
 
+}
+async function signup() {
+
+    email = email.value;
+    password = password.value;
+    try {
+        const response = await fetch('http://localhost:4444/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }),
+        });
+
+        if (!response.ok) {
+            throw new Error('Error');
+        }
+
+        const data = await response.json();
+
+        if (data) {
+        
+            localStorage.setItem( data);
+
+            window.location.href = 'home.html';
+        } else {
+        
+            alert('Login failed.');
+        }
+    } catch (error) {
+        console.error('Error during login:', error.message);
+        alert('Login failed');
+    }
 }
