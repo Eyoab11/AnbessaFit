@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <body class="font-poppins bg-black">
+      <header class="text-black ">
+        <nav class="text-white p-5 shadow md:flex md:items-center md:justify-between">
+            <div>
+                <span class="text-3xl font-extrabold hover:text-orange-500 cursor-pointer">
+                    Anbessa<em class="text-orange-500">Fit</em><em>™</em>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                  </span>
+            </div>
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
+                <li class="px-4 md:my">
+                    <a href="home.html" class="text-lg font-bold hover:text-orange-500">Home</a>
+                </li>
+                <li class="px-4">
+                    <a href="about.html" class="text-lg font-bold hover:text-orange-500">About</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Exercises</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Nutrition</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Workout Plan</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Contact
+                    </a>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>  
+        <main>
+            <div class="container mx-auto my-8 p-8 bg-black shadow-lg rounded-md">
+                <section class="mb-8">
+                  <h2 class="text-7xl font-semibold mb-4 text-white text-center">Welcome to your Workout Plans</h2>
+                  <p class="text-orange-400 text-center">Achieve your fitness goals with our customized workout plans designed for all fitness levels.</p>
+                </section>
+                <form class="bg-opacity-10 bg-white rounded-lg backdrop-filter backdrop-blur-lg border border-white shadow-lg p-8 w-120">
+                  <h3 class="text-4xl font-bold mb-6 text-white text-center">Workout Plans</h3>
+              
+                  <label class="block mb-3 text-white text-lg font-semibold" for="workout-task">Task</label>
+                  <input type="text" id="workout-task" placeholder="Enter task" class="w-full h-14 bg-opacity-10 bg-white rounded-md px-4 text-white text-lg font-light mb-4 placeholder-gray-300 focus:outline-none focus:border-white focus:bg-opacity-40">
+
+                  <label class="block mb-3 text-white text-lg font-semibold" for="workout-date">Date</label>
+                  <input type="date" id="workout-date" class="w-full h-14 bg-opacity-10 bg-white rounded-md px-4 text-white text-lg font-light mb-4 placeholder-gray-300 focus:outline-none focus:border-white focus:bg-opacity-40">
+              
+                  <label class="block mb-3 text-white text-lg font-semibold" for="workout-reps">Reps</label>
+                  <input type="number" id="workout-reps" placeholder="Enter reps" class="w-full h-14 bg-opacity-10 bg-white rounded-md px-4 text-white text-lg font-light mb-4 placeholder-gray-300 focus:outline-none focus:border-white focus:bg-opacity-40">
+              
+                  <label class="block mb-3 text-white text-lg font-semibold" for="workout-sets">Sets</label>
+                  <input type="number" id="workout-sets" placeholder="Enter sets" class="w-full h-14 bg-opacity-10 bg-white rounded-md px-4 text-white text-lg font-light mb-10 placeholder-gray-300 focus:outline-none focus:border-white focus:bg-opacity-40">
+              
+                  <button class="w-full h-14 bg-white text-gray-900 font-semibold text-lg rounded-md cursor-pointer hover:bg-orange-500">Add Workout</button>
+              </form>
+
+              <h2 class="text-7xl font-semibold mb-4 text-white text-center ">Workouts</h2>
+              <!DOCTYPE html>
+        <html lang="en">
+
+  
+<table class="w-full border-collapse border border-white text-white">
+   
+    <thead>
+        <tr>
+            <th class="p-4 border border-white">Task</th>
+            <th class="p-4 border border-white">Date</th>
+            <th class="p-4 border border-white">Reps</th>
+            <th class="p-4 border border-white">Sets</th>
+            <th class="p-4 border border-white"></th>
+        </tr>
+    </thead>
+  
+    <tr class="cursor-pointer hover:bg-orange-600">
+        <td class="p-4 border border-white">Sample Task</td>
+        <td class="p-4 border border-white">2022-01-01</td>
+        <td class="p-4 border border-white">10</td>
+        <td class="p-4 border border-white">3</td>
+        <td class="p-4 border border-white">
+            <i class="fas fa-trash hover:text-red-900"></i>
+        </td>
+    </tr>
+    <tr class="cursor-pointer hover:bg-orange-600">
+        <td class="p-4 border border-white">Sample Task</td>
+        <td class="p-4 border border-white">2022-01-01</td>
+        <td class="p-4 border border-white">10</td>
+        <td class="p-4 border border-white">3</td>
+        <td class="p-4 border border-white">
+            <i class="fas fa-trash hover:text-red-900"></i>
+        </td>
+    </tr>
+    <tr class="cursor-pointer hover:bg-orange-600">
+        <td class="p-4 border border-white">Sample Task</td>
+        <td class="p-4 border border-white">2022-01-01</td>
+        <td class="p-4 border border-white">10</td>
+        <td class="p-4 border border-white">3</td>
+        <td class="p-4 border border-white">
+            <i class="fas fa-trash hover:text-red-900"></i>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+            
+        </main>
+        <footer class="bg-black dark:bg-black">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                  <div class="mb-6 md:mb-0">
+                      <a href="#" class="flex items-center">
+                          <img src="./images/logo2.png" class="h-20 ml-3" alt="InjeraHub Logo" />
+                          
+                      </a>
+                  </div>
+                  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Links</h2>
+                          <ul class="text-orange-500 dark:text-orange-500 font-medium">
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Home</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">About Us</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Exercises</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Nutrition</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Workout Plan</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Contact Us</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                          <ul class="text-orange-500 dark:text-orange-500 font-medium">
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white ">Github</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Telegram</a>
+                              </li>
+                              <li class="mb-4">
+                                <a href="#" class="hover:underline hover:text-white">Instagram</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline hover:text-white">Facebook</a>
+                            </li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                          <ul class="text-orange-500 dark:text-orange-500 font-medium">
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline hover:text-white">Privacy Policy</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="hover:underline hover:text-white">Terms &amp; Conditions</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <div class="sm:flex sm:items-center sm:justify-between">
+                  <span class="text-sm text-orange-500 sm:text-center dark:text-orange-500">© 2023 <a href="#" class="hover:underline">MuscleCheck™</a>. All Rights Reserved.
+                  </span>
+                  <div class="flex mt-4 sm:justify-center sm:mt-0">
+                      <a href="#" class="text-orange-500 hover:text-gray-900 dark:hover:text-white">
+                        <em class="fab fa-google text-3xl text-customed"></em>
+                      </a>
+                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <em class="fab fa-telegram text-3xl text-customed"></em>
+                      <a href="#" class="text-orange-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <em class="fab fa-instagram text-3xl text-customed"></em>
+                        </a>
+                      
+                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <em class="fab fa-github text-3xl text-customed"></em>
+                          </a>
+                      <a href="#" class="text-orange-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <em class="fab fa-facebook text-3xl text-customed"></em>
+                      </a>
+                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <em class="fab fa-twitter text-3xl text-customed"></em>
+                      </a>
+                     
+                  </div>
+              </div>
+            </div>
+        </footer>
+</body>
+</html>
