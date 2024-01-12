@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-poppins bg-black">
+    <header class="text-black ">
+        <nav class="text-white p-5 shadow md:flex md:items-center md:justify-between">
+            <div>
+                <span class="text-3xl font-extrabold hover:text-orange-500 cursor-pointer">
+                    Anbessa<em class="text-orange-500">Fit</em><em>™</em>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                  </span>
+            </div>
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
+                <li class="px-4 md:my">
+                    <a href="home.html" class="text-lg font-bold hover:text-orange-500">Home</a>
+                </li>
+                <li class="px-4">
+                    <a href="about.html" class="text-lg font-bold hover:text-orange-500">About</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Exercises</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Nutrition</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Workout Plan</a>
+                </li>
+                <li class="px-4">
+                    <a href="#" class="text-lg font-bold  hover:text-orange-500">Contact
+                    </a>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>  
+       
+        
+    
+    <main class="container mx-auto my-8 px-4">
+        <section class="text-white">
+            <h1 class="text-6xl font-bold text-center mb-6 mt-20">Exercise <em class="text-orange-500">Programs</em></h1>
+
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                
+                <div class="bg-orange-500 p-6 rounded-lg shadow-md ">
+                    <img src="../images/young-man-sportswear-running-on-600nw-435565456.webp" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Cardio Workout</h2>
+                    <p class="text-gray-300 ">Improve your cardiovascular health with our effective cardio exercises.</p>
+                    <span class="hidden " id="more-text">
+                        Cardiovascular workouts, commonly referred to as cardio exercises, are essential components of a well-rounded fitness routine. These exercises aim to elevate the heart rate, improve respiratory function, and enhance overall cardiovascular health. Engaging in activities such as running, cycling, swimming, or brisk walking not only burns calories but also strengthens the heart and lungs, leading to increased endurance and improved circulation. Cardio workouts are effective in reducing the risk of chronic diseases, including heart disease, and promoting weight management. Incorporating regular cardiovascular exercise into your routine can boost mood, reduce stress, and contribute to a healthier, more active lifestyle. Whether you prefer high-intensity interval training or steady-state cardio, the benefits extend beyond physical fitness, positively impacting both mental and cardiovascular well-being.
+                    </span>
+                    <button id="toggle-btn" class="mt-4 text-black focus:outline-none font-bold underline hover:text-blue-900">Read More</button>
+                     <button id="hide-btn" class="hidden mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none">Hide</button>
+                </div>
+
+
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/photo-1521804906057-1df8fdb718b7.avif" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Strength Training</h2>
+                    <p class="text-gray-300">Build muscle and strength with our comprehensive strength training program.</p>
+                    <span class="hidden more-text">
+                        Strength training is a crucial component of a comprehensive fitness regimen, focusing on building and toning muscle mass, enhancing strength, and improving overall functional fitness. This form of exercise involves resistance against muscular contraction, typically through the use of free weights, resistance bands, or weight machines. By progressively challenging the muscles, strength training promotes hypertrophy, leading to increased muscle size and strength. Beyond the aesthetic benefits, strength training plays a vital role in boosting metabolism, aiding weight management, and supporting bone health. Additionally, it can enhance joint stability, reduce the risk of injuries, and improve overall body composition. Varied routines, such as weightlifting, bodyweight exercises, or functional training, allow individuals to target specific muscle groups and achieve a well-balanced physique. Integrating strength training into one's fitness routine contributes not only to physical prowess but also to overall health and vitality.
+                    </span>
+                    <button class="mt-4 text-black focus:outline-none toggle-btn font-bold underline hover:text-blue-900 " data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black  focus:outline-none hide-btn hover:text-blue-900 font-bold underline" data-target="more-text ">Hide</button>
+                </div>
+                
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/113_circuit-training.webp" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Circuit Training</h2>
+                    <p class="text-gray-300">Get a full-body workout with our dynamic circuit training sessions.</p>
+                    <span class="hidden more-text">
+                        Circuit training is a highly effective and time-efficient workout method that combines strength training and cardiovascular exercises. It involves performing a series of exercises in a sequence with minimal rest between each exercise. The goal is to target different muscle groups and keep the heart rate elevated throughout the workout.
+                        
+                        Benefits of Circuit Training:
+                        - Improved cardiovascular fitness
+                        - Increased strength and endurance
+                        - Efficient calorie burning
+                        - Versatility in exercise selection
+                        - Time-saving workout option
+                
+                        Our circuit training sessions are designed to cater to individuals of all fitness levels. Whether you're a beginner or an advanced fitness enthusiast, our trainers will guide you through a challenging and rewarding circuit training experience.
+                
+                        Join us for an energizing and results-driven circuit training workout!
+                    </span>
+                    <button class="mt-4 text-black focus:outline-none toggle-btn font-bold underline hover:text-blue-900" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black underline font-bold focus:outline-none hide-btn" data-target="more-text">Hide</button>
+                </div>
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/170173104-57a7ae5d3df78cf459497c95.jpg" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Pilates for Core Strength</h2>
+                    <p class="text-gray-300">Strengthen your core and improve posture through Pilates exercises.</p>
+                    <span class="hidden more-text">
+                        Pilates is a low-impact exercise method designed to improve strength, flexibility, and overall body awareness. It focuses on the core muscles, including the abdominals, back, and pelvic floor, to enhance core strength and stability. Through controlled movements and mindful breathing, Pilates promotes a strong and balanced body.
+                
+                        Benefits of Pilates for Core Strength:
+                        - Enhanced core muscle engagement
+                        - Improved posture and alignment
+                        - Increased flexibility and range of motion
+                        - Injury prevention and rehabilitation
+                        - Mind-body connection and stress reduction
+                
+                        Our Pilates for Core Strength sessions are suitable for individuals of all fitness levels. Whether you're a beginner or experienced in Pilates, our instructors will guide you through exercises tailored to your needs.
+                
+                        Join us for a Pilates class to experience the transformative effects on your core strength and overall well-being.
+                    </span>
+                    <button class="mt-4 text-black font-bold underline  focus:outline-none toggle-btn hover:text-blue-900" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black font-bold focus:outline-none hide-btn hover:text-blue-900 underline" data-target="more-text">Hide</button>
+                </div>
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/hiitworkout.webp" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">HIIT Workouts</h2>
+                    <p class="text-gray-300">Burn calories and boost metabolism with our high-intensity interval training workouts.</p>
+                    <span class="hidden more-text">
+                        High-Intensity Interval Training (HIIT) is a powerful workout method that alternates between short, intense bursts of exercise and brief periods of rest or lower-intensity activity. This training approach is known for its efficiency in burning calories, improving cardiovascular health, and enhancing overall fitness.
+                
+                        Benefits of HIIT Workouts:
+                        - Effective fat burning
+                        - Increased metabolic rate
+                        - Time-efficient workouts
+                        - Improved cardiovascular endurance
+                        - Enhanced oxygen consumption
+                        - Potential for post-exercise calorie burn
+                
+                        Our HIIT Workouts are designed to push your limits and maximize results. Whether you're a beginner or experienced fitness enthusiast, our trainers will guide you through dynamic exercises to elevate your heart rate and challenge your body.
+                
+                        Join our HIIT sessions to experience a high-energy workout that delivers results in a shorter amount of time.
+                    </span>
+                    <button class="mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none toggle-btn" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none hide-btn " data-target="more-text">Hide</button>
+                </div>
+                
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/yoga.jpg" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Yoga for Flexibility</h2>
+                    <p class="text-gray-300">Enhance flexibility and find inner peace with our guided yoga sessions.</p>
+                    <span class="hidden more-text">
+                        Yoga for Flexibility focuses on improving the range of motion in your joints and enhancing overall flexibility. Through a series of poses and stretches, our guided yoga sessions help you achieve better balance, coordination, and flexibility.
+                
+                        Benefits of Yoga for Flexibility:
+                        - Increased joint mobility
+                        - Improved muscle elasticity
+                        - Enhanced posture and alignment
+                        - Stress relief and relaxation
+                        - Mind-body connection
+                        - Release of muscle tension
+                
+                        Our experienced yoga instructors create sessions suitable for all levels, from beginners to advanced practitioners. Whether you're looking to release tension from tight muscles or achieve more profound stretches, our Yoga for Flexibility classes provide a holistic approach to physical and mental well-being.
+                
+                        Join us on the mat to explore the transformative benefits of yoga for flexibility and discover a path to greater mind-body harmony.
+                    </span>
+                    <button class="mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none toggle-btn" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-blue-900 focus:outline-none hide-btn" data-target="more-text">Hide</button>
+                </div>
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/boxing.webp" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Boxing Workouts</h2>
+                    <p class="text-gray-300">Improve your cardiovascular health and agility with our intense boxing workouts.</p>
+                    <span class="hidden more-text">
+                        Engage in our dynamic boxing workouts designed to boost cardiovascular endurance, enhance agility, and provide a full-body workout. Boxing is not only a high-intensity cardio exercise but also an effective way to improve coordination, strength, and mental focus.
+                
+                        Key Benefits of Boxing Workouts:
+                        - Increased cardiovascular fitness
+                        - Improved agility and coordination
+                        - Full-body muscle engagement
+                        - Stress relief through dynamic movements
+                        - Boosted metabolism and calorie burning
+                
+                        Our experienced trainers will guide you through various boxing techniques, including punches, footwork, and defensive maneuvers. Whether you're a beginner or an experienced boxer, our workouts cater to all levels.
+                
+                        Strap on your gloves, hit the bags, and experience the exhilarating benefits of our boxing workouts for a healthier and more active lifestyle.
+                    </span>
+                    <button class="mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none toggle-btn" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black font-bold underline focus:outline-none hide-btn hover:text-blue-900" data-target="more-text">Hide</button>
+                </div>
+                
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/streching.webp" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Stretching Exercises</h2>
+                    <p class="text-gray-300">Improve flexibility, reduce muscle tension, and prevent injury with our stretching exercises.</p>
+                    <span class="hidden more-text">
+                        Incorporate stretching exercises into your fitness routine to enhance flexibility, reduce muscle tension, and improve overall mobility. Our guided stretching sessions target major muscle groups, promoting better circulation and preventing injuries related to muscle tightness.
+                
+                        Benefits of Stretching Exercises:
+                        - Increased flexibility and range of motion
+                        - Improved posture and muscle balance
+                        - Enhanced blood circulation
+                        - Stress reduction and relaxation
+                        - Prevention of muscle imbalances and injuries
+                
+                        Whether you're preparing for a workout or seeking recovery, our stretching exercises are suitable for all fitness levels. Join us in unlocking the transformative benefits of regular stretching for a more agile and resilient body.
+                    </span>
+                    <button class="mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none toggle-btn" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black font-bold hover:text-blue-900 focus:outline-none hide-btn underline" data-target="more-text">Hide</button>
+                </div>
+                
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <img src="../images/meditation.jpg" alt="" class="mb-4 rounded-md">
+                    <h2 class="text-4xl font-bold mb-4 text-black">Meditation for Mindfulness</h2>
+                    <p class="text-gray-300">Find balance and reduce stress with guided meditation sessions for mindfulness.</p>
+                    <span class="hidden more-text">
+                        Immerse yourself in the practice of mindfulness through our guided meditation sessions. Discover the profound benefits of meditation, including stress reduction, enhanced focus, and a greater sense of overall well-being.
+                
+                        Key Aspects of Meditation for Mindfulness:
+                        - Stress reduction and relaxation
+                        - Improved mental clarity and focus
+                        - Emotional balance and well-being
+                        - Mind-body connection and self-awareness
+                
+                        Our experienced meditation instructors will lead you through calming techniques, breathwork, and mindfulness exercises. Whether you're a beginner or an experienced meditator, our sessions provide a sanctuary for cultivating inner peace and tranquility.
+                
+                        Join us on the journey to mindfulness and experience the transformative power of meditation in fostering a balanced and centered life.
+                    </span>
+                    <button class="mt-4 text-black font-bold underline hover:text-blue-900 focus:outline-none toggle-btn" data-target="more-text">Read More</button>
+                    <button class="hidden mt-4 text-black underline font-bold hover:text-blue-900 focus:outline-none hide-btn" data-target="more-text">Hide</button>
+                </div>
+                
+
+
+            </div>
+        </section>
+    </main>
+<footer class="bg-black dark:bg-black">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="./images/logo2.png" class="h-20 ml-3" alt="InjeraHub Logo" />
+                  
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Links</h2>
+                  <ul class="text-orange-500 dark:text-orange-500 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Home</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">About Us</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Exercises</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Nutrition</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Workout Plan</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-orange-500 dark:text-orange-500 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white ">Github</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Telegram</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline hover:text-white">Instagram</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline hover:text-white">Facebook</a>
+                    </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-orange-500 dark:text-orange-500 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-white">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline hover:text-white">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-orange-500 sm:text-center dark:text-orange-500">© 2023 <a href="#" class="hover:underline">MuscleCheck™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-orange-500 hover:text-gray-900 dark:hover:text-white">
+                <em class="fab fa-google text-3xl text-customed"></em>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <em class="fab fa-telegram text-3xl text-customed"></em>
+              <a href="#" class="text-orange-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <em class="fab fa-instagram text-3xl text-customed"></em>
+                </a>
+              
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <em class="fab fa-github text-3xl text-customed"></em>
+                  </a>
+              <a href="#" class="text-orange-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <em class="fab fa-facebook text-3xl text-customed"></em>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <em class="fab fa-twitter text-3xl text-customed"></em>
+              </a>
+             
+          </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+    const moreTextEl = document.getElementById('more-text');
+        const toggleBtnEl = document.getElementById('toggle-btn');
+        const hideBtnEl = document.getElementById('hide-btn');
+
+        toggleBtnEl.addEventListener('click', () => {
+            moreTextEl.style.display = 'inline'; 
+            toggleBtnEl.style.display = 'none';
+            hideBtnEl.style.display = 'inline';
+        });
+
+        hideBtnEl.addEventListener('click', () => {
+            moreTextEl.style.display = 'none';
+            toggleBtnEl.style.display = 'inline';
+            hideBtnEl.style.display = 'none';
+        });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+        const hideBtns = document.querySelectorAll('.hide-btn');
+        const moreTexts = document.querySelectorAll('.more-text');
+
+        toggleBtns.forEach((toggleBtn, index) => {
+            toggleBtn.addEventListener('click', () => {
+                moreTexts[index].style.display = 'inline';
+                toggleBtn.style.display = 'none';
+                hideBtns[index].style.display = 'inline';
+            });
+
+            hideBtns[index].addEventListener('click', () => {
+                moreTexts[index].style.display = 'none';
+                toggleBtn.style.display = 'inline';
+                hideBtns[index].style.display = 'none';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
